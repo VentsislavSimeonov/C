@@ -1,0 +1,39 @@
+// Example program
+#include <iostream>
+#include <string>
+
+int main()
+{
+    //user inputs beginning and end
+    int begin, end, br = 0;
+    std::cout << "Input the begining of the numbers you want to display" << std::endl;
+    std::cin >> begin;
+    std::cout << "Input the ending of the numbers you want to display" << std::endl;
+    std::cin >> end;
+    
+
+    for(int i = begin ;i <= end; i++)
+    {
+        br = 0;
+        if(i % 2 != 0)
+        {
+            for(int j = 3; j < i; j++)
+            {
+                if(i % j == 0)
+                {
+                    br++;
+                    continue;
+                }
+                if(j==i-1 && br == 0)
+                {
+                    std::cout << i << std::endl;
+                    j++;
+                }
+            }
+        }
+    }
+    
+    
+    
+    return 0;
+}
