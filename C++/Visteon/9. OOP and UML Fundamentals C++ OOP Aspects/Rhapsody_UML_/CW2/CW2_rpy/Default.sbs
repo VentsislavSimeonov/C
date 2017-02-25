@@ -1,0 +1,412 @@
+I-Logix-RPY-Archive version 8.5.2 Modeler C++ 1159120
+{ ISubsystem 
+	- _id = GUID ab722fb9-f6b1-4ac0-90d2-4e480c51eed4;
+	- _myState = 8192;
+	- _name = "Default";
+	- _objectCreation = "52299952592016192992752";
+	- _umlDependencyID = "2280";
+	- _lastID = 8;
+	- Declaratives = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IStereotype 
+			- _id = GUID 7a7d30b5-cf96-457e-898c-8f5090c5ff89;
+			- _myState = 10240;
+			- _name = "stereotype_7";
+			- _objectCreation = "52299972592016192990752";
+			- _umlDependencyID = "2829";
+			- _m2Classes = { IRPYRawContainer 
+				- size = 1;
+				- value = "Flow"; 
+			}
+		}
+	}
+	- weakCGTime = 7.25.2016::14:57:29;
+	- strongCGTime = 7.25.2016::14:45:48;
+	- _defaultComposite = GUID 821f697c-54ef-4b4f-b4f8-2c43cbb73ca5;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 5;
+		- value = 
+		{ IClass 
+			- _id = GUID 821f697c-54ef-4b4f-b4f8-2c43cbb73ca5;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- _objectCreation = "52299992592016192988752";
+			- _umlDependencyID = "2391";
+			- weakCGTime = 7.25.2016::14:45:48;
+			- strongCGTime = 7.25.2016::12:5:27;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IPart 
+					- _id = GUID f030a071-2011-41ef-91ea-e854b25e9c01;
+					- _myState = 8192;
+					- _name = "std";
+					- _objectCreation = "52300012592016192986752";
+					- _umlDependencyID = "1875";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID a8adf835-b7fc-46a8-b37b-878e4f1f13c0;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _implicitClass = { IClass 
+						- _id = GUID a8adf835-b7fc-46a8-b37b-878e4f1f13c0;
+						- _myState = 10240;
+						- _name = "std";
+						- _objectCreation = "52300032592016192984752";
+						- _umlDependencyID = "1875";
+						- _theMainDiagram = { IHandle 
+							- _m2Class = "IDiagram";
+							- _filename = "";
+							- _subsystem = "";
+							- _class = "";
+							- _name = "Model1";
+							- _id = GUID c31f31d7-18a0-45a4-bcbf-1620f23fe210;
+						}
+						- weakCGTime = 7.25.2016::14:45:48;
+						- strongCGTime = 7.25.2016::14:45:48;
+						- _multiplicity = "";
+						- _itsStateChart = { IHandle 
+							- _m2Class = "";
+						}
+						- _classModifier = Unspecified;
+					}
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID e083dda3-2ace-4177-ad42-6911bf455cfb;
+			- _myState = 8192;
+			- _name = "Garage";
+			- _objectCreation = "52300052592016192982752";
+			- _umlDependencyID = "2127";
+			- Dependencies = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IDependency 
+					- _id = GUID aea30991-5f1b-45f5-b227-2bea29a715d7;
+					- _myState = 2048;
+					- _name = "Engine";
+					- _objectCreation = "52300072592016192980752";
+					- _umlDependencyID = "2142";
+					- _dependsOn = { INObjectHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 178a70c7-5a64-4d6e-8e24-148e81ca58e2;
+					}
+				}
+			}
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Model1";
+				- _id = GUID c31f31d7-18a0-45a4-bcbf-1620f23fe210;
+			}
+			- _lastID = 1;
+			- weakCGTime = 7.25.2016::14:33:41;
+			- strongCGTime = 7.25.2016::14:7:36;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 2;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 99df15ad-6983-401e-9676-bbc99cc7532d;
+					- _myState = 10240;
+					- _name = "itsCar";
+					- _objectCreation = "52300092592016192978752";
+					- _umlDependencyID = "2167";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 0e1fc234-69cf-4576-87cc-74385cf6c0be;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 0948732a-e4b5-4299-8bfd-0276e0003d95;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID a565251f-faa4-4baf-950c-025c08805d0f;
+					- _myState = 10240;
+					- _name = "itsCar_1";
+					- _objectCreation = "52300112592016192976752";
+					- _umlDependencyID = "2302";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 0e1fc234-69cf-4576-87cc-74385cf6c0be;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 4e6c93a4-1559-4ee4-90dc-967c83da51de;
+			- _myState = 8192;
+			- _name = "Player";
+			- _objectCreation = "52300132592016192974752";
+			- _umlDependencyID = "2165";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Model1";
+				- _id = GUID c31f31d7-18a0-45a4-bcbf-1620f23fe210;
+			}
+			- weakCGTime = 7.25.2016::14:16:12;
+			- strongCGTime = 7.25.2016::14:8:22;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 4;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 7541c98a-e85d-4a81-a39c-c9f4449b9d05;
+					- _myState = 10240;
+					- _name = "itsCar";
+					- _objectCreation = "52300152592016192972752";
+					- _umlDependencyID = "2158";
+					- _multiplicity = "1...*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 0e1fc234-69cf-4576-87cc-74385cf6c0be;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 06dab22e-cdee-4933-b4c5-28be8f48c77f;
+					}
+					- _linkName = "";
+					- _linkType = Aggreg;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID c5464afb-35b3-45d9-a73c-afd1adaba062;
+					- _myState = 10240;
+					- _name = "itsCar_1";
+					- _objectCreation = "52300172592016192970752";
+					- _umlDependencyID = "2302";
+					- _multiplicity = "1...*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 0e1fc234-69cf-4576-87cc-74385cf6c0be;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 5ec2d6e3-c2c7-4db0-81c5-dbc7835a17a1;
+					}
+					- _linkName = "";
+					- _linkType = Aggreg;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID e7fe2285-a448-4bed-a7b1-b6a67a28cc28;
+					- _myState = 10240;
+					- _name = "itsCar_2";
+					- _objectCreation = "52300192592016192968752";
+					- _umlDependencyID = "2312";
+					- _multiplicity = "1...*";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 0e1fc234-69cf-4576-87cc-74385cf6c0be;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Aggreg;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID f0c8378e-cf52-43fe-ac49-8560255f0dda;
+					- _myState = 10240;
+					- _name = "itsGarage";
+					- _objectCreation = "52300212592016192966752";
+					- _umlDependencyID = "2463";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e083dda3-2ace-4177-ad42-6911bf455cfb;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 0e1fc234-69cf-4576-87cc-74385cf6c0be;
+			- _myState = 8192;
+			- _name = "Car";
+			- _objectCreation = "52300232592016192964752";
+			- _umlDependencyID = "1822";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Model1";
+				- _id = GUID c31f31d7-18a0-45a4-bcbf-1620f23fe210;
+			}
+			- weakCGTime = 7.25.2016::14:21:6;
+			- strongCGTime = 7.25.2016::14:7:56;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 5;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 06dab22e-cdee-4933-b4c5-28be8f48c77f;
+					- _myState = 10240;
+					- _name = "itsPlayer";
+					- _objectCreation = "52300252592016192962752";
+					- _umlDependencyID = "2501";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 4e6c93a4-1559-4ee4-90dc-967c83da51de;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 7541c98a-e85d-4a81-a39c-c9f4449b9d05;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 0948732a-e4b5-4299-8bfd-0276e0003d95;
+					- _myState = 10240;
+					- _name = "itsGarage";
+					- _objectCreation = "52300272592016192960752";
+					- _umlDependencyID = "2463";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e083dda3-2ace-4177-ad42-6911bf455cfb;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID 99df15ad-6983-401e-9676-bbc99cc7532d;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 5ec2d6e3-c2c7-4db0-81c5-dbc7835a17a1;
+					- _myState = 10240;
+					- _name = "itsPlayer_1";
+					- _objectCreation = "52300292592016192958752";
+					- _umlDependencyID = "2654";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 4e6c93a4-1559-4ee4-90dc-967c83da51de;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "IAssociationEnd";
+						- _id = GUID c5464afb-35b3-45d9-a73c-afd1adaba062;
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID c2d9f45a-18f8-4a42-a39f-7ebc6e063e05;
+					- _myState = 10240;
+					- _name = "itsEngine";
+					- _objectCreation = "52300312592016192956752";
+					- _umlDependencyID = "2478";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 178a70c7-5a64-4d6e-8e24-148e81ca58e2;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Composition;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID a79ebf94-b963-46dc-a7fa-4ff463739e86;
+					- _myState = 10240;
+					- _name = "itsEngine_1";
+					- _objectCreation = "52300332592016192954752";
+					- _umlDependencyID = "2622";
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 178a70c7-5a64-4d6e-8e24-148e81ca58e2;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Aggreg;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 178a70c7-5a64-4d6e-8e24-148e81ca58e2;
+			- _myState = 8192;
+			- _name = "Engine";
+			- _objectCreation = "52300352592016192952752";
+			- _umlDependencyID = "2142";
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Model1";
+				- _id = GUID c31f31d7-18a0-45a4-bcbf-1620f23fe210;
+			}
+			- weakCGTime = 7.25.2016::14:20:2;
+			- strongCGTime = 7.25.2016::14:17:7;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 0;
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 7.25.2016::14:7:18;
+}
+
