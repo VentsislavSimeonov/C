@@ -1,0 +1,8 @@
+Book: Headfirst Design Paterns (DP)
+
+
+redo the HW to have a snap option enabled with Ctrl hold to have the function work
+redo HW so that we can implement the resize method again we need to have 3 options <
+<create a group shape called composite (use SHIFT for creating the Group) (a class Group) >> should add all objects selected 
+ 
+Lazyfoo.net

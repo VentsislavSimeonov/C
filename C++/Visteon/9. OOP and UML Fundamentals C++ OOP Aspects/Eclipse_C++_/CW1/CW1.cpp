@@ -1,0 +1,70 @@
+//============================================================================
+// Name        : CW1.cpp
+// Author      : Ventsislav
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <stdexcept>
+using namespace std;
+
+class Complex {
+public:
+	//the constructor is implicit > default constructor with no parameters
+	Complex() :
+			m_re(0), m_im(0) {
+
+		cout << "Creating: " << this << endl;
+	}
+	Complex(double re, double im)			//
+	:
+			m_re(re), m_im(im)			//initialize variables for the classes
+	{
+		m_re = re;
+		m_im = im;
+		cout << "Creating: " << this << endl;
+
+	}
+
+	Complex(/* cv-qualifier */const Complex& other)		//Copy Constructors
+	:
+			m_re(other.m_re), m_im(other.m_im) {
+		cout << "Creating: " << this << endl;
+
+	}
+
+	Complex operator+(Complex& op2) {
+		return Complex(this->m_re + op2.m_re, this->m_im + op2.m_im);
+	}
+
+	void print() {
+		cout << "Creating: " << this << endl;
+	}
+	~Complex() {
+		cout << "Destroying: " << this << endl;
+	}
+
+	friend ostream& operator <<(ostream& ostream, const Complex& c);
+
+private:
+	double m_re;
+	double m_im;
+
+};
+
+ostream& operator <<(ostream& oStream, const Complex& c) {
+	oStream << c.m_re << ", " << c.m_im;
+	return oStream;
+}
+
+int main() {
+	Complex c1(3, 4);
+
+	Complex c2(7, 8);
+
+	cout << c1 + c2 << endl;
+
+	return 0;
+}
