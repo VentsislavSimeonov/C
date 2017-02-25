@@ -1,3 +1,3 @@
 # C
 
-C based Repor (C/C++/C#)
+C based Repository (C/C++/C#)
