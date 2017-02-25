@@ -1,0 +1,11 @@
+1. Someone is written the program PreProcessingHomework but it doesn't compile and it doesn't work. Fix it.
+    Compile and debug the program: PreProcessingHomework.c.
+    The program is done but there are some errors in it:
+        One compilation error.
+        Two logical errors.
+
+    What program should do:    
+        - Receive an unsigned short value and a bit number and check whether the corresponding bit in the vale is 1 or 0.
+        The result after execution of the code should be:
+            'bit = 1'
+            
