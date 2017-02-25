@@ -1,0 +1,79 @@
+1. CodeLite: 
+
+Languages Supported: C, C++
+
+Key Features:
+
+    Supports syntax highlighting for other languages
+    Built-in support for GCC/clang/VC++
+    Built-in GDB support
+    Subversion and GIT plug-ins
+    2 code completion engines – both will run simultaneously
+    RAD Tool for wxWidgets
+    Locals tree, threads view, memory view
+
+2. Code Blocks:
+
+Languages Supported: C, C++, Fortran
+
+Key Features:
+
+    Uses wxWidgets
+    Written in C++
+    No interpreted languages or proprietary languages needed
+    Extensible using pre-built or custom-built plug-ins
+    Multiple compiler support
+    Debugger with full breakpoints support
+    Syntax highlighting and code completion
+    External, customizable tools
+    Tabbed interface with open files list for quick navigation
+    Task management for multiple users
+
+3.Eclipse:
+
+Languages Supported: C, C++, Python, Perl, PHP, Java, Ruby and more
+
+Key Features:
+
+    Variety of Package Solutions for multi-language support
+    Easily switch context between perspectives
+    Mylyn provides a task-focused UI with system-tray notifications
+    Eclipse Java Development Tools
+    Eclipse Git Team Provider
+    Eclipse Plugin Development Environment
+    Excellent tooling options for JEE projects
+    JUnit integration
+    Ample plug-ins for extended capabilities
+
+4.NetBeans:
+
+Languages Supported: C, C++, C++11, Fortan, Assembler
+
+Key Features:
+
+    Remote development
+    Works on Windows, Linux, OS X, and Solaris platforms
+    Dynamic and static libraries
+    Drag-and-drop binary files to create new projects
+    Flexible Run and Debug commands
+    Multi-session GNU gdb debugger integration
+    Set a variety of breakpoints and view in Breakpoints window
+    Refactorings in Editor, Class View and Navigator
+    Unit testing capability
+    Qt Toolkit support
+    Supports Oracle Solaris Studio,  GNU, CLang/LLVM, Cygwin, and MinGW compilers
+
+5. AptanaStudio3:
+
+Languages Supported: HTML5, CSS3, JavaScript, Ruby, Rails, PHP and Python
+
+Key Features:
+
+    Code assist for HTML, CSS and JavaScript, PHP and Ruby
+    Multiple protocols, including FTP, SFTP, FTPS and Capistrano
+    Automatically push Ruby & Rails apps to hosting services
+    Integrated Ruby & Rails and JavaScript debuggers
+    Git integration
+    Quick access to command line terminal
+    Ships with hundreds of commands
+    Extend capabilities by stringing custom commands

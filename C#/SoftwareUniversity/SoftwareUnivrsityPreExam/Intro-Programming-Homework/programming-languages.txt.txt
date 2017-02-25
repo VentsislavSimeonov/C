@@ -1,0 +1,135 @@
+////////////////////////////////
+	Java. Java is top pick as one of the most popular programming languages, used for building server-side applications to video games and mobile apps. ...
+
+///Java example:
+
+    import javax.swing.*; //first type of import
+    import java.sql.ResultSet; //2nd type of import
+    class MyFrame extends JFrame{
+        private String name = "C# the son of Java";
+        
+        public MyFrame(){
+            //.......
+            
+        }
+        
+        public void printMe(String name){
+            //.....................
+        }
+        
+        private String getName(){
+            return this.name;
+        }
+        
+    }
+
+
+///C# example:
+
+    using System;
+    using System.Windows.Forms;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Data;
+    using System.Data.Common;
+    namespace Example
+    {
+      // the : indicates extends and/or implements
+      public class MyFrame: Form
+      {
+        private string name = "C# the son of Java";
+        // the : here indicates that the constructor "inherits" the base class constructor
+        public MyFrame() : base()
+        {
+          // ...
+        }
+        // C# convention - methods and properties start with capital letter
+        // instead of Java's camel case of lowercase first letter but capitalises second word, third word etc
+        public void PrintMe(string name)
+        {
+          //...
+        }
+        private string GetName()
+        {
+          // although this is legal, in C# you would probably use a property (see below)
+          return this.name;
+        }
+        // Property - outside this class use MyFrame.Name to access the name variable.
+        public string Name
+        {
+          get
+          {
+            return this.name;
+          }
+          private set
+          {
+            this.name = value;
+          }
+        }
+      }
+    }    
+
+////////////////////////////////
+	Python. is a widely used general-purpose, high-level programming language
+
+///Python example:
+
+In [3]: x = "a".split
+
+In [4]: y = "b".split
+
+In [5]: x is y  # “is” performs reference comparison in Python
+
+Out[5]: False
+
+In [6]: z = str.split
+
+In [7]: z is x
+
+Out[7]: False
+
+In [8]: x1 = "a".split
+
+In [9]: x1 is x
+
+Out[9]: False
+
+////////////////////////////////
+	C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level 		memory manipulation.
+
+
+omparison...
+
+////////////////////////////////
+	Ruby.  is a dynamic, reflective, object-oriented, general-purpose programming language.
+
+// Javascript example
+	<strong>ProductsController</strong> (The MVC controller)
+		- uses:
+			<strong>Product</strong> (The MVC model)
+
+	
+// C# example:
+	- uses:
+		<strong>ProductsService</strong> (A service layer for accessing products)
+			- uses:
+				<strong>ProductsRepository</strong> (A repository to wrap data access)
+					- loads:
+						<strong>Product</strong> (The domain object)
+
+////////////////////////////////
+	
+	JavaScript.  is a high level, dynamic, untyped, and interpreted programming language.[6] It has been standardized in the ECMAScript language specification.
+
+// Javascript example
+@script AddComponentMenu ("Transform/Follow Transform")
+class FollowTransform extends MonoBehaviour {
+}  
+
+// C# example:
+[AddComponentMenu("Transform/Follow Transform")]
+class FollowTransform : MonoBehaviour {
+}
+
+	
+	
