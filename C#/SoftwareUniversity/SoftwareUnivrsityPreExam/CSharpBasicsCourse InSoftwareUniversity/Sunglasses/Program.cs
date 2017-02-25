@@ -1,0 +1,48 @@
+﻿using System;
+
+namespace Sunglasses
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            string asterisk = new string('*', 2 * n);
+            string emptySpace = new string(' ', n);
+            PrintFrames(asterisk, emptySpace);
+            Console.WriteLine();
+            string slashLens = new string('/', 2 * n - 2);
+            string verticalBar = new string('|', n);
+            for (int i = 1; i < n - 1; i++)
+            {
+                PrintLens(slashLens);
+                if ((n - 1) / 2 == i)
+                {
+                    Console.Write(verticalBar);
+                }
+                else
+                {
+                    Console.Write(emptySpace);
+                }
+                PrintLens(slashLens);
+                Console.WriteLine();
+            }
+            PrintFrames(asterisk, emptySpace);
+            Console.WriteLine();
+            Console.Read();
+        }
+        private static void PrintFrames(string asterisk, string emptySpace)
+        {
+            Console.Write(asterisk);
+            Console.Write(emptySpace);
+            Console.Write(asterisk);
+        }
+        private static void PrintLens(string slashLens)
+        {
+            Console.Write('*');
+            Console.Write(slashLens);
+            Console.Write('*');
+        }
+        
+    }
+}
